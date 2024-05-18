@@ -8,6 +8,9 @@
   box-sizing: border-box;
 }
 
+body{
+  color: hsl(243, 87%, 12%);
+}
 
 .section {
   margin-top: 40px;
@@ -46,6 +49,7 @@ li {
   justify-content: space-between;
   width: 100%;
   margin-top: 120px;
+  padding-left: 50px;
   /* margin-left: 50px; */
 }
 
@@ -112,7 +116,8 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-bottom: 10px;
+  padding-top: 100px;   /*changed*/ 
+  padding-bottom: 150px; /*changed*/
 }
 
 .a{
@@ -173,7 +178,7 @@ font-size: 30px;
    font-size: 14px;
 }
 .hero-down{
-    margin-top: 110px;
+    margin-top: 0px;
     padding: 90px;
 }
 
@@ -200,7 +205,7 @@ font-size: 30px;
 
 
 .sm-handle a{
-  color: rgb(12, 12, 156);
+  color: rgb(9, 9, 221);
   font-size: 20px;
 }
 
@@ -209,7 +214,7 @@ footer{
  color: #ffff;
 }
 
-ul li a{
+.ft-a{
   color: #ffff;
 }
 
@@ -249,4 +254,40 @@ ul li a{
   
 }
 
+.sm-handle{
+ display: flex;
+ gap: 25px;
+ margin-right: 280px;
+}
 
+/*---media query for mobile*/
+
+
+  @media only screen and (max-width: 700px){
+    header{
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 16px;
+      margin-right: 10px;
+    }
+
+    .nav-box{
+      margin: 0;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    .nav-logo img{
+         width: 100px;
+    }
+    
+    .nav-links ul{
+       justify-content: space-between; 
+       display: flex;
+    }
+
+    .nav-links ul li{
+      margin-left: 10px;
+    }
+}
